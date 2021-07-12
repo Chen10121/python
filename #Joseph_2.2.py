@@ -27,7 +27,7 @@ class Joseph:
                     sum -=1
                 else:
                     counter +=1
-        list_joseph.append(self.josephlist[0])
+        list_joseph.append(self.josephlist[subscript-1])
         return list_joseph
 
 #创建对象的类
