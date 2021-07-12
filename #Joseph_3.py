@@ -54,7 +54,6 @@ class Reader_zip(Reader):
         read = []
         for filename in z.namelist():
             read.append(filename)
-        print(read)
         return read
 
 class Reader_xls(Reader):
