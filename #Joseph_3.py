@@ -66,7 +66,7 @@ class Reader_xls(Reader):
             read.append(table.row_values(i))
         return read
 
-if __name__ = '__main__':
+if __name__ == '__main__':
     #filepath = r'C:\Users\MAC\Documents\GitHub\python\excel.xlsx'
     #filepath = r'C:\Users\MAC\Documents\GitHub\python\CSV.csv'
     filepath = r'C:\Users\MAC\Documents\GitHub\python\ZIP.zip'
