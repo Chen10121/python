@@ -66,20 +66,21 @@ class Reader_xls(Reader):
             read.append(table.row_values(i))
         return read
 
-#filepath = r'C:\Users\MAC\Documents\GitHub\python\excel.xlsx'
-#filepath = r'C:\Users\MAC\Documents\GitHub\python\CSV.csv'
-filepath = r'C:\Users\MAC\Documents\GitHub\python\ZIP.zip'
+if __name__ = '__main__':
+    #filepath = r'C:\Users\MAC\Documents\GitHub\python\excel.xlsx'
+    #filepath = r'C:\Users\MAC\Documents\GitHub\python\CSV.csv'
+    filepath = r'C:\Users\MAC\Documents\GitHub\python\ZIP.zip'
 
-#filelist = Reader_xls(filepath).read_xls()
-#filelist = Reader_csv(filepath).read_csv()
-filelist = Reader_zip(filepath).read_zip()
+    #filelist = Reader_xls(filepath).read_xls()
+    #filelist = Reader_csv(filepath).read_csv()
+    filelist = Reader_zip(filepath).read_zip()
 
-step = int(input('Step size:'))
-start = int(input('Start position:'))
+    step = int(input('Step size:'))
+    start = int(input('Start position:'))
 
-#j = Reader_xls(filepath)
-#j = Reader_csv(filepath)
-j = Reader_zip(filepath)
+    #j = Reader_xls(filepath)
+    #j = Reader_csv(filepath)
+    j = Reader_zip(filepath)
 
-for i in j.Josephring(step,start,filelist):
-    print(i)
+    for i in j.Josephring(step,start,filelist):
+        print(i)
